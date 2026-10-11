@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad HTML Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
+        .top { background: #d9d9d9; padding: 20px; text-align: center; }
+        .links { background: #bbb; padding: 12px; text-align: center; }
+        .links a { margin: 0 12px; color: #222; }
+        .content { padding: 20px; }
+        .box { background: white; margin: 12px 0; padding: 15px; }
+        .bottom { background: #d9d9d9; padding: 15px; text-align: center; }
+    </style>
+</head>
+<body>
+    <!-- Poor structure: generic divs are used for every part of the page -->
+    <div class="top">
+        <h1>My College Website</h1>
+        <p>Welcome to our college</p>
+    </div>
+    <div class="links">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <div class="box" id="about">
+            <h2>About Us</h2>
+            <p>Our college provides education in technology, science, and management.</p>
+        </div>
+        <div class="box" id="courses">
+            <h2>Courses</h2>
+            <p>We offer computer engineering, information technology, and other courses.</p>
+            <p>Students learn programming, databases, and web development.</p>
+        </div>
+        <div class="box" id="contact">
+            <h2>Contact</h2>
+            <p>Email: college@example.com</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>Copyright 2026 My College</p>
+    </div>
+</body>
+</html>

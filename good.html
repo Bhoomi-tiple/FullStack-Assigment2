@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good HTML5 Example - My College</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #20243a; background: #f5f7ff; }
+        header { padding: 28px 20px; text-align: center; color: white; background: linear-gradient(135deg, #6d4aff, #4c67d6); }
+        nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 14px; background: #242747; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 900px; margin: 24px auto; padding: 0 18px; }
+        section, article { background: white; margin-bottom: 18px; padding: 22px; border-radius: 12px; box-shadow: 0 4px 16px rgba(30, 40, 90, .08); }
+        h2 { color: #5942c8; margin-top: 0; }
+        footer { padding: 18px; text-align: center; color: white; background: #242747; }
+        @media (max-width: 600px) { nav { gap: 12px; } main { margin: 16px auto; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My College Website</h1>
+        <p>Learn, explore, and build your future</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>Our college supports learning in technology, science, and management.</p>
+        </section>
+        <section id="courses" aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Courses</h2>
+            <article>
+                <h3>Computer Engineering</h3>
+                <p>Students learn programming, databases, software development, and problem-solving.</p>
+            </article>
+            <article>
+                <h3>Information Technology</h3>
+                <p>Students explore networks, web technologies, and modern computing systems.</p>
+            </article>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>Email: <a href="mailto:college@example.com">college@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 My College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
